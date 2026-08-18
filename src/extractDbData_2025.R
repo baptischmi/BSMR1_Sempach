@@ -56,7 +56,7 @@ dbDataDir <- file.path("U:/RadarData/CH_Sempach", year, "Database")
 # If RODBC can't find a driver registered simply as "SQL Server" on this
 # machine, that's the first thing to check - see RODBC::odbcDataSources().
 dbDriverChar = "SQL Server"
-dbServer     = "BIRDSCAN2200"
+dbServer     = "dbradar\\radardata"
 
 # Credentials: prefer .Renviron (db_id / db_key) if set there, else fall back
 # to the same credentials already hard-coded in RealtTimeMTR_tidy_inclMpulse.R.
